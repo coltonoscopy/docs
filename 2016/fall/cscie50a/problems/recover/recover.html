@@ -696,20 +696,34 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>to make sure your workspace is up-to-date.</p>
 </div>
 <div class="paragraph">
-<p>Next, navigate to your <code>~/workspace/week13</code> directory.  For the first time in a while, no big code distro this time, but there is one important file to download. Execute</p>
+<p>Next, navigate to your <code>~/workspace/week13</code> directory.  For the first time in a while, no big code distro this time, but there is one important file to download.</p>
+</div>
+<div class="paragraph">
+<p><strong>NOTE: These instructions were updated on December 5.</strong></p>
+</div>
+<div class="paragraph">
+<p>Execute the following steps, starting within <code>~/workspace/week13</code>, where the <code>$</code> represents your prompt (so don&#8217;t retype it!)</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash">wget http://docs.cs50.net/2016/cscie50a/problems/recover/recover.zip</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span class="tok-nv">$ </span>mkdir recover
+<span class="tok-nv">$ </span><span class="tok-nb">cd </span>recover
+<span class="tok-nv">$ </span>touch recover.c
+<span class="tok-nv">$ </span>wget http://cdn.cs50.net/2016/fall/psets/4/pset4/card.raw
+<span class="tok-nv">$ </span>mv card.raw camera.raw
+<span class="tok-nv">$ </span>ls</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This file&#8217;s somewhat large (about 16 MB), so it may require some time to download depending on the speed of your internet connection! Then unzip that ZIP file, delete it, and the navigate into your newly-created <code>recover</code> directory. If you list the contents of your directory, you should find two files therein:</p>
+<p>You should see the below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="bash">camera.raw  recover.c</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p><strong>END OF UPDATED INSTRUCTIONS</strong></p>
 </div>
 <div class="paragraph">
 <p>You&#8217;ll be doing all your work for this problem inside of this <code>recover.c</code> file. Open it up and&#8230;&#8203; darn, it&#8217;s totally empty!</p>

@@ -407,20 +407,23 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
                 <ul class="sectlevel1">
 <li><a href="#tl-dr">tl;dr</a></li>
 <li><a href="#help">Help</a></li>
-<li><a href="#academic-honesty">Academic Honesty</a></li>
 <li><a href="#getting-started">Getting Started</a></li>
 <li><a href="#problems">Problems</a></li>
 <li><a href="#hints">Hints</a></li>
-<li><a href="#walkthrough">Walkthrough</a>
+<li><a href="#walkthroughs">Walkthroughs</a>
 <ul class="sectlevel2">
-<li><a href="#problems-1-3">Problems 1 – 3</a></li>
-<li><a href="#problem-4">Problem 4</a></li>
+<li><a href="#mario">Mario</a>
+<ul class="sectlevel3">
+<li><a href="#less-comfortable">less comfortable</a></li>
+<li><a href="#more-comfortable">more comfortable</a></li>
 </ul>
 </li>
-<li><a href="#faqs">FAQs</a>
-<ul class="sectlevel2">
-<li><a href="#attributeerror-module-object-has-no-attribute-code-get_-code">AttributeError: 'module' object has no attribute <code>get_</code></a></li>
-<li><a href="#importerror-no-module-named-sqlalchemy">ImportError: No module named 'sqlalchemy'</a></li>
+<li><a href="#greedy">Greedy</a></li>
+<li><a href="#credit">Credit</a></li>
+<li><a href="#caesar">Caesar</a></li>
+<li><a href="#vigenère">Vigenère</a></li>
+<li><a href="#crack">Crack</a></li>
+<li><a href="#sentiments">Sentiments</a></li>
 </ul>
 </li>
 <li><a href="#how-to-submit">How to Submit</a></li>
@@ -459,32 +462,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="ulist">
 <ul>
 <li>
-<p>Attend David&#8217;s walkthrough on Mon 10/24, 1pm – 2:30pm, in Sanders Theatre.</p>
+<p>Watch Zamyla&#8217;s walkthroughs herein.</p>
 </li>
 <li>
-<p>Watch David&#8217;s walkthrough (of Sentiments) herein (coming Mon 10/24 eve).</p>
-</li>
-<li>
-<p>Attend your TF&#8217;s section (or another if you have a conflict).</p>
-</li>
-<li>
-<p>Post questions and search answers in <a href="https://cs50.harvard.edu/discuss">CS50 Discuss</a>.</p>
-</li>
-<li>
-<p>Attend individual TFs' and CAs' <a href="https://cs50.harvard.edu/hours">office hours</a> at HSA.</p>
-</li>
-<li>
-<p>Attend course-wide <a href="https://cs50.harvard.edu/hours">office hours</a>.</p>
+<p>Start a <a href="https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/a7ec0c0a7b6e460f877da0734811c4cd/">discussion</a> with classmates.</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="academic-honesty"><a class="link" href="#academic-honesty">Academic Honesty</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Do keep in mind the course&#8217;s policy on <a href="http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty">academic honesty</a>, particularly    its "regret clause."</p>
 </div>
 </div>
 </div>
@@ -640,53 +623,65 @@ cd ~/workspace/pset6/</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="walkthrough"><a class="link" href="#walkthrough">Walkthrough</a></h2>
+<h2 id="walkthroughs"><a class="link" href="#walkthroughs">Walkthroughs</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="problems-1-3"><a class="link" href="#problems-1-3">Problems 1 – 3</a></h3>
-<div class="sectionbody">
+<h3 id="mario"><a class="link" href="#mario">Mario</a></h3>
+<div class="sect3">
+<h4 id="less-comfortable"><a class="link" href="#less-comfortable">less comfortable</a></h4>
 <div class="videoblock">
 <div class="content">
-<iframe src="https://video.cs50.net/2016/fall/psets/6/pset6/c-python" frameborder="0" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/syt3NZhllwc?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="problem-4"><a class="link" href="#problem-4">Problem 4</a></h3>
-<div class="paragraph">
-<p>See <a href="../../../../problems/sentiments/sentiments.html#walkthrough">Sentiments</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="faqs"><a class="link" href="#faqs">FAQs</a></h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="attributeerror-module-object-has-no-attribute-code-get_-code"><a class="link" href="#attributeerror-module-object-has-no-attribute-code-get_-code">AttributeError: 'module' object has no attribute <code>get_</code></a></h3>
-<div class="paragraph">
-<p>If seeing this error (for <code>cs50.get_char</code>, <code>cs50.get_float</code>, <code>cs50.get_int</code>, or <code>cs50.get_string</code>), try executing the below (which fixes a bug in an earlier version of the CS50 Library for Python):</p>
-</div>
-<div class="listingblock">
+<div class="sect3">
+<h4 id="more-comfortable"><a class="link" href="#more-comfortable">more comfortable</a></h4>
+<div class="videoblock">
 <div class="content">
-<pre class="pygments highlight"><code>sudo chmod -R a+rX /usr/lib/python2.7/dist-packages/cs50
-sudo chmod -R a+rX /usr/lib/python3/dist-packages/cs50</code></pre>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/gqS876f0lk0?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="importerror-no-module-named-sqlalchemy"><a class="link" href="#importerror-no-module-named-sqlalchemy">ImportError: No module named 'sqlalchemy'</a></h3>
-<div class="paragraph">
-<p>If seeing this error, execute</p>
-</div>
-<div class="listingblock">
+<h3 id="greedy"><a class="link" href="#greedy">Greedy</a></h3>
+<div class="videoblock">
 <div class="content">
-<pre class="pygments highlight"><code>pip install --user sqlalchemy</code></pre>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/f3iMmGry05Q?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="credit"><a class="link" href="#credit">Credit</a></h3>
+<div class="videoblock">
+<div class="content">
+<iframe width="960" height="540" src="https://www.youtube.com/embed/o2nVBm9S3iw?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="caesar"><a class="link" href="#caesar">Caesar</a></h3>
 <div class="paragraph">
-<p>to resolve!</p>
+<p><em>Coming Soon</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="vigenère"><a class="link" href="#vigenère">Vigenère</a></h3>
+<div class="paragraph">
+<p><em>Coming Soon</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="crack"><a class="link" href="#crack">Crack</a></h3>
+<div class="paragraph">
+<p><em>Coming Soon</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sentiments"><a class="link" href="#sentiments">Sentiments</a></h3>
+<div class="paragraph">
+<p>See <a href="../../../../problems/sentiments/sentiments.html#walkthrough">Sentiments</a>.</p>
 </div>
 </div>
 </div>
@@ -695,7 +690,7 @@ sudo chmod -R a+rX /usr/lib/python3/dist-packages/cs50</code></pre>
 <h2 id="how-to-submit"><a class="link" href="#how-to-submit">How to Submit</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Coming in a few weeks, still readying CS50x 2017&#8217;s new-and-improved submission system!</em></p>
+<p><em>Coming in a few weeks, still readying CS50x 2017&#8217;s new-and-improved submission system! Just hang on to your code for now, and reload this page in a few weeks!</em></p>
 </div>
 </div>
 </div>

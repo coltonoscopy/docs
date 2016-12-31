@@ -398,7 +398,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 .listingblock .pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
         </style>
-        <title>Problem Set 0</title>
+        <title></title>
     </head>
     <body class="toc2 toc-left">
         <div id="header">
@@ -407,23 +407,41 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
                 <ul class="sectlevel1">
 <li><a href="#tl-dr">tl;dr</a></li>
 <li><a href="#help">Help</a></li>
-<li><a href="#itching-to-program">Itching to Program?</a></li>
+<li><a href="#academic-honesty">Academic Honesty</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#problems">Problems</a></li>
+<li><a href="#hints">Hints</a></li>
+<li><a href="#walkthrough">Walkthrough</a>
+<ul class="sectlevel2">
+<li><a href="#problems-1-3">Problems 1 – 3</a></li>
+<li><a href="#problem-4">Problem 4</a></li>
+</ul>
+</li>
+<li><a href="#faqs">FAQs</a>
+<ul class="sectlevel2">
+<li><a href="#attributeerror-module-object-has-no-attribute-code-get_-code">AttributeError: 'module' object has no attribute <code>get_</code></a></li>
+<li><a href="#importerror-no-module-named-sqlalchemy">ImportError: No module named 'sqlalchemy'</a></li>
+</ul>
+</li>
 <li><a href="#how-to-submit">How to Submit</a></li>
 </ul>
             </div>
         </div>
         <div id="content">
-            <h1>Problem Set 0</h1>
+            <h1>Problem Set 6: Sentimental</h1>
 <div class="sect1">
 <h2 id="tl-dr"><a class="link" href="#tl-dr">tl;dr</a></h2>
 <div class="sectionbody">
 <div class="olist arabic">
-<ol class="arabic" start="0">
+<ol class="arabic">
 <li>
-<p>Attend or watch Week 0&#8217;s lecture.</p>
+<p>Watch <a href="https://video.cs50.net/2016/fall/lectures/8">Week 8&#8217;s lecture</a> (and <a href="https://video.cs50.net/2016/fall/lectures/6">Week 6&#8217;s</a> and <a href="https://video.cs50.net/2016/fall/lectures/7">Week 7&#8217;s</a>, if you haven&#8217;t already).</p>
 </li>
 <li>
-<p>Program in Scratch.</p>
+<p>Port some programs from C to Python.</p>
+</li>
+<li>
+<p>Analyze some sentiments.</p>
 </li>
 <li>
 <p>Submit a form.</p>
@@ -436,91 +454,240 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <h2 id="help"><a class="link" href="#help">Help</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For help with Week 0 and Problem Set 0:</p>
+<p>For help with Weeks 6 – 8 and Problem Set 6:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Post questions and search answers in <a href="http://cs50.net/discuss">CS50 Discuss</a>.</p>
+<p>Attend David&#8217;s walkthrough on Mon 10/24, 1pm – 2:30pm, in Sanders Theatre.</p>
 </li>
 <li>
-<p>Watch <a href="https://youtu.be/697pD31GCZg">Zamyla&#8217;s walkthrough</a>.</p>
+<p>Watch David&#8217;s walkthrough (of Sentiments) herein (coming Mon 10/24 eve).</p>
 </li>
 <li>
-<p>Email the course&#8217;s heads.</p>
+<p>Attend your TF&#8217;s section (or another if you have a conflict).</p>
+</li>
+<li>
+<p>Post questions and search answers in <a href="https://cs50.harvard.edu/discuss">CS50 Discuss</a>.</p>
+</li>
+<li>
+<p>Attend individual TFs' and CAs' <a href="https://cs50.harvard.edu/hours">office hours</a> at HSA.</p>
+</li>
+<li>
+<p>Attend course-wide <a href="https://cs50.harvard.edu/hours">office hours</a>.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="itching-to-program"><a class="link" href="#itching-to-program">Itching to Program?</a></h2>
+<h2 id="academic-honesty"><a class="link" href="#academic-honesty">Academic Honesty</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Head to <a href="https://scratch.mit.edu/" class="bare">https://scratch.mit.edu/</a> and sign up for an account on MIT&#8217;s website by clicking <strong>Join Scratch</strong> atop the page. Any username (that&#8217;s available) is fine, but take care to remember it and your choice of password.</p>
+<p>Do keep in mind the course&#8217;s policy on <a href="http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty">academic honesty</a>, particularly    its "regret clause."</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="getting-started"><a class="link" href="#getting-started">Getting Started</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>update50
+mkdir ~/workspace/pset6/
+cd ~/workspace/pset6/</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="problems"><a class="link" href="#problems">Problems</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Then head to <a href="https://scratch.mit.edu/help/" class="bare">https://scratch.mit.edu/help/</a> and take note of the resources available to you before you dive into Scratch itself. In particular, you might want to skim the <a href="https://cdn.scratch.mit.edu/scratchr2/static/__95f8025b5d5663c8eca07b96a66ef8d6__/pdfs/help/Getting-Started-Guide-Scratch2.pdf">Getting Started Guide</a>.</p>
+<p>All code that you write should be consistent with <a href="https://www.python.org/dev/peps/pep-0008/">Style Guide for Python Code</a>, otherwise known as PEP 8.</p>
 </div>
-<div class="paragraph">
-<p>Next try your hand at <em>Pikachu&#8217;s Pastry Catch</em> by (former student) Gabe Walker! Click the green flag and then, per Gabe&#8217;s instructions, hit your keyboard&#8217;s space bar, at which point the game will begin! Feel free to procrastinate a bit.</p>
-</div>
-<iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/26329354/?autostart=false" frameborder="0" allowfullscreen="true"></iframe>
-<div class="paragraph">
-<p>If curious, Gabe&#8217;s source code can be seen at <a href="http://scratch.mit.edu/projects/26329354/" class="bare">http://scratch.mit.edu/projects/26329354/</a>. (You can also full-screen the game at that same URL, as full-screening the embedded game here might not work.)</p>
-</div>
-<div class="paragraph">
-<p>Next, be sure you know what&#8217;s recyclable and compostable these days by trying out this remix of <em>Oscartime</em> by Jordan Hayashi!</p>
-</div>
-<iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/71161586/?autostart=false" frameborder="0" allowfullscreen="true"></iframe>
-<div class="paragraph">
-<p>Jordan&#8217;s source code can be found at <a href="https://scratch.mit.edu/projects/71161586/" class="bare">https://scratch.mit.edu/projects/71161586/</a>. (You can also full-screen that game at that same URL.)</p>
-</div>
-<div class="paragraph">
-<p>If you&#8217;ve no experience (or comfort) whatsoever with programming, rest assured that Gabe&#8217;s and Jordan&#8217;s projects are more complex than what we expect for this first problem set. (Click <strong>See inside</strong> in Scratch&#8217;s top-right corner to look at each project&#8217;s underlying "implementation details.") But they do reveal what you can do with Scratch.</p>
-</div>
-<div class="paragraph">
-<p>In fact, for a gentler introduction to Scratch (and programming more generally), you might want to review some of the examples that we looked at in Week 0, the "source code" for which can be found at <a href="https://scratch.mit.edu/studios/3003963/" class="bare">https://scratch.mit.edu/studios/3003963/</a>. Once you can say to yourself, "Okay, I think I get this," you&#8217;re ready to proceed.</p>
-</div>
-<div class="paragraph">
-<p>Now it&#8217;s time to choose your own adventure! Your mission is, quite simply, to have fun with Scratch and implement a project of your choice (be it an animation, a game, interactive art, or anything else), subject only to the following requirements.</p>
-</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Implement either of the below exactly as specified but in Python:</p>
+<div class="openblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
-<p>Your project must have at least two sprites, at least one of which must resemble something other than a cat.</p>
+<p><a href="../../../../problems/mario/less/mario.html">Mario</a>, less comfortable, in a file called <code>mario.py</code> in <code>pset6/</code>.</p>
 </li>
 <li>
-<p>Your project must have at least three scripts total (i.e., not necessarily three per sprite).</p>
-</li>
-<li>
-<p>Your project must use at least one condition, one loop, and one variable.</p>
-</li>
-<li>
-<p>Your project must use at least one sound.</p>
-</li>
-<li>
-<p>Your project should be more complex than most of those demonstrated in lecture (many of which, though instructive, were quite short) but it can be less complex than <em>Oscartime</em> and <em>Pokemon Go</em>. As such, your project should probably use a few dozen puzzle pieces overall.</p>
+<p><a href="../../../../problems/mario/more/mario.html">Mario</a>, more comfortable, in a file called <code>mario.py</code> in <code>pset6/</code>.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>Feel free to peruse <a href="https://scratch.mit.edu/studios/1493562/">some of last year&#8217;s projects</a> for inspiration, but your own project should not be terribly similar to any of them. Try to think of an idea on your own, and then set out to implement it. But don&#8217;t try to implement the entirety of your project all at once: pluck off one piece at a time. Gabe, for instance, probably implemented just one pastry first, before he moved onto the game&#8217;s other sprites.  In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth.</p>
+</div>
+</div>
+</li>
+<li>
+<p>Implement either of the below exactly as specified but in Python:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../../../problems/greedy/greedy.html">Greedy</a>, less comfortable, in a file called <code>greedy.py</code> in <code>pset6/</code>.</p>
+</li>
+<li>
+<p><a href="../../../../problems/credit/credit.html">Credit</a>, more comfortable, in a file called <code>credit.py</code> in <code>pset6/</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Implement any (one) of the below exactly as specified but in Python:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../../../problems/caesar/caesar.html">Caesar</a>, less comfortable, in a file called <code>caesar.py</code> in <code>pset6/</code>.</p>
+</li>
+<li>
+<p><a href="../../../../problems/vigenere/vigenere.html">Vigenère</a>, less comfortable, in a file called <code>vigenere.py</code> in <code>pset6/</code>.</p>
+</li>
+<li>
+<p><a href="../../../../problems/crack/crack.html">Crack</a>, more comfortable, in a file called <code>crack.py</code> in <code>pset6/</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Implement <a href="../../../../problems/sentiments/sentiments.html">Sentiments</a> in <code>pset6/sentiments/</code>.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>If, along the way, you find it too difficult to implement some feature, try not to fret; alter your design or work around the problem. If you set out to implement an idea that you find fun, you should not find it hard to satisfy this problem set&#8217;s requirements.</p>
+<p>No <code>check50</code> for these!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="hints"><a class="link" href="#hints">Hints</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Be sure to use Python 3, not Python 2.</p>
+</li>
+<li>
+<p>If a program is in a file called, say, <code>foo.py</code>, you can run that program with <code>python foo.py</code>.</p>
+</li>
+<li>
+<p>For Mario, Greedy, Credit, Caesar, Vigenère, and Crack, it is <strong>reasonable</strong> to look at your own implementations thereof in C and others' implementations thereof in C, including the staff&#8217;s implementations thereof (and postmortems) in C. It is <strong>not reasonable</strong> to look at others' implementations of the same in Python. It is <strong>not reasonable</strong> to look at others' implementations of Sentiments.</p>
+</li>
+<li>
+<p>Consider this problem set an opportunity not only to port your own prior work from C to Python but to improve upon your earlier designs using lessons learned since!</p>
+</li>
+<li>
+<p>When porting code from C to Python in CS50 IDE, you might want to select <strong>View &gt; Layout &gt; Horizontal Split</strong> so that you can see both side by side.</p>
+</li>
+<li>
+<p>Insofar as a goal of this problem set is to teach you how to teach yourself a new language, keep in mind that these acts are not only <strong>reasonable</strong>, per the syllabus, but encouraged toward that end:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.</p>
+</li>
+<li>
+<p>Turning to the web or elsewhere for instruction beyond the course&#8217;s own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set&#8217;s problems or your own final project.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>You&#8217;re welcome to use the CS50 Library for Python, which includes <code>get_float</code>, <code>get_int</code>, and <code>get_string</code>. Just remember to include</p>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>import cs50</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Alright, off you go. Make us proud!</p>
+<p>atop your code. Or you can use <a href="https://docs.python.org/3/library/functions.html#input"><code>input</code></a> and validate users' input yourself.</p>
+</div>
+</li>
+<li>
+<p>You might find <a href="https://docs.python.org/3/library/functions.html#chr"><code>chr</code></a> and/or <a href="https://docs.python.org/3/library/functions.html#ord"><code>ord</code></a> of help.</p>
+</li>
+<li>
+<p>You might find these references of interest:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.python.org/3/reference/index.html">The Python Language Reference</a></p>
+</li>
+<li>
+<p><a href="https://docs.python.org/3/library/">The Python Standard Library</a></p>
+</li>
+<li>
+<p><a href="https://docs.python.org/3/tutorial/index.html">The Python Tutorial</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="walkthrough"><a class="link" href="#walkthrough">Walkthrough</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="problems-1-3"><a class="link" href="#problems-1-3">Problems 1 – 3</a></h3>
+<div class="sectionbody">
+<div class="videoblock">
+<div class="content">
+<iframe src="https://video.cs50.net/2016/fall/psets/6/pset6/c-python" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="problem-4"><a class="link" href="#problem-4">Problem 4</a></h3>
+<div class="paragraph">
+<p>See <a href="../../../../problems/sentiments/sentiments.html#walkthrough">Sentiments</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="faqs"><a class="link" href="#faqs">FAQs</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="attributeerror-module-object-has-no-attribute-code-get_-code"><a class="link" href="#attributeerror-module-object-has-no-attribute-code-get_-code">AttributeError: 'module' object has no attribute <code>get_</code></a></h3>
+<div class="paragraph">
+<p>If seeing this error (for <code>cs50.get_char</code>, <code>cs50.get_float</code>, <code>cs50.get_int</code>, or <code>cs50.get_string</code>), try executing the below (which fixes a bug in an earlier version of the CS50 Library for Python):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>sudo chmod -R a+rX /usr/lib/python2.7/dist-packages/cs50
+sudo chmod -R a+rX /usr/lib/python3/dist-packages/cs50</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="importerror-no-module-named-sqlalchemy"><a class="link" href="#importerror-no-module-named-sqlalchemy">ImportError: No module named 'sqlalchemy'</a></h3>
+<div class="paragraph">
+<p>If seeing this error, execute</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>pip install --user sqlalchemy</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Incidentally, if you don&#8217;t have the best Internet access, you&#8217;re welcome to download Scratch&#8217;s "offline editor" at <a href="https://scratch.mit.edu/scratch2download/" class="bare">https://scratch.mit.edu/scratch2download/</a>. But when done with your project offline, be sure to upload it to your account at <a href="http://scratch.mit.edu/" class="bare">http://scratch.mit.edu/</a> via <strong>File &gt; Share to website</strong> in the offline editor.</p>
+<p>to resolve!</p>
 </div>
-<div class="paragraph">
-<p>Once finished with your project, click <strong>See project page</strong> in Scratch&#8217;s top-right corner. Ensure your project has a title (in Scratch&#8217;s top-left corner), some instructions (in Scratch&#8217;s top-right corner), and some notes and/or credits (in Scratch&#8217;s bottom-right corner). Then click <strong>Share</strong> in Scratch&#8217;s top-right corner so that others can see your project. Finally, take note of the URL in your browser&#8217;s address bar. That&#8217;s your project&#8217;s URL on MIT&#8217;s website, and you&#8217;ll need to know it later.</p>
-</div>
-<div class="paragraph">
-<p>Oh, and if you&#8217;d like to exhibit your project in Fall 2016&#8217;s studio, head to <a href="https://scratch.mit.edu/studios/3009443/" class="bare">https://scratch.mit.edu/studios/3009443/</a>, then click <strong>Add projects</strong>, and paste in your own project&#8217;s URL.</p>
 </div>
 </div>
 </div>
@@ -528,13 +695,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <h2 id="how-to-submit"><a class="link" href="#how-to-submit">How to Submit</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Submit <a href="https://forms.cs50.net/2016/fall/psets/0" class="bare">https://forms.cs50.net/2016/fall/psets/0</a>.</p>
-</div>
-<div class="paragraph">
-<p>CS50 collects some start-of-semester data for planning purposes via Problem Set 0&#8217;s form, so expect the form to take 15 minutes or so. Subsequent problem sets' forms will be shorter.</p>
-</div>
-<div class="paragraph">
-<p>This was Problem Set 0.</p>
+<p><em>Coming in a few weeks, still readying CS50x 2017&#8217;s new-and-improved submission system!</em></p>
 </div>
 </div>
 </div>

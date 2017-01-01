@@ -723,25 +723,25 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-kd">function</span> <span class="tok-nx">greet</span><span class="tok-p">()</span>
             <span class="tok-p">{</span>
                 <span class="tok-nx">alert</span><span class="tok-p">(</span><span class="tok-s1">&#39;hello, &#39;</span> <span class="tok-o">+</span> <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">getElementById</span><span class="tok-p">(</span><span class="tok-s1">&#39;name&#39;</span><span class="tok-p">).</span><span class="tok-nx">value</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;!&#39;</span><span class="tok-p">);</span>
             <span class="tok-p">}</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>dom0<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">id=</span><span class="tok-s">&quot;demo&quot;</span> <span class="tok-na">onsubmit=</span><span class="tok-s">&quot;greet(); return false;&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">id=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>dom0<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;demo&quot;</span> <span class="tok-na">onsubmit</span><span class="tok-o">=</span><span class="tok-s">&quot;greet(); return false;&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -770,25 +770,25 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>dom1<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">id=</span><span class="tok-s">&quot;demo&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">id=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>dom1<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;demo&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">getElementById</span><span class="tok-p">(</span><span class="tok-s1">&#39;demo&#39;</span><span class="tok-p">).</span><span class="tok-nx">onsubmit</span> <span class="tok-o">=</span> <span class="tok-kd">function</span><span class="tok-p">()</span> <span class="tok-p">{</span>
                 <span class="tok-nx">alert</span><span class="tok-p">(</span><span class="tok-s1">&#39;hello, &#39;</span> <span class="tok-o">+</span> <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">getElementById</span><span class="tok-p">(</span><span class="tok-s1">&#39;name&#39;</span><span class="tok-p">).</span><span class="tok-nx">value</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;!&#39;</span><span class="tok-p">);</span>
                 <span class="tok-k">return</span> <span class="tok-kc">false</span><span class="tok-p">;</span>
             <span class="tok-p">};</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -819,10 +819,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-nx">$</span><span class="tok-p">(</span><span class="tok-nb">document</span><span class="tok-p">).</span><span class="tok-nx">ready</span><span class="tok-p">(</span><span class="tok-kd">function</span><span class="tok-p">()</span> <span class="tok-p">{</span>
                 <span class="tok-nx">$</span><span class="tok-p">(</span><span class="tok-s1">&#39;#demo&#39;</span><span class="tok-p">).</span><span class="tok-nx">submit</span><span class="tok-p">(</span><span class="tok-kd">function</span><span class="tok-p">(</span><span class="tok-nx">event</span><span class="tok-p">)</span> <span class="tok-p">{</span>
@@ -831,16 +831,16 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
                 <span class="tok-p">});</span>
             <span class="tok-p">});</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>dom2<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">id=</span><span class="tok-s">&quot;demo&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">id=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-  <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>dom2<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;demo&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+  <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -866,25 +866,25 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">getElementById</span><span class="tok-p">(</span><span class="tok-s1">&#39;demo&#39;</span><span class="tok-p">).</span><span class="tok-nx">onsubmit</span> <span class="tok-o">=</span> <span class="tok-kd">function</span><span class="tok-p">()</span> <span class="tok-p">{</span>
                 <span class="tok-nx">alert</span><span class="tok-p">(</span><span class="tok-s1">&#39;hello, &#39;</span> <span class="tok-o">+</span> <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">getElementById</span><span class="tok-p">(</span><span class="tok-s1">&#39;name&#39;</span><span class="tok-p">).</span><span class="tok-nx">value</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;!&#39;</span><span class="tok-p">);</span>
                 <span class="tok-k">return</span> <span class="tok-kc">false</span><span class="tok-p">;</span>
             <span class="tok-p">};</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>dom1<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">id=</span><span class="tok-s">&quot;demo&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">id=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>dom1<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;demo&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;name&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Name&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -928,20 +928,20 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>form0<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">action=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">method=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Email&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Password&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Password (again)&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-nt">/&gt;</span> I agree
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value=</span><span class="tok-s">&quot;Register&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>form0<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">action</span><span class="tok-o">=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">method</span><span class="tok-o">=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Email&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Password&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Password (again)&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-p">/&gt;</span> I agree
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value</span><span class="tok-o">=</span><span class="tok-s">&quot;Register&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -951,19 +951,19 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>form1<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">action=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;registration&quot;</span> <span class="tok-na">method=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Email&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Password&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Password (again)&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-nt">/&gt;</span> I agree
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value=</span><span class="tok-s">&quot;Register&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>form1<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">action</span><span class="tok-o">=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;registration&quot;</span> <span class="tok-na">method</span><span class="tok-o">=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Email&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Password&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Password (again)&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-p">/&gt;</span> I agree
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value</span><span class="tok-o">=</span><span class="tok-s">&quot;Register&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-kd">var</span> <span class="tok-nx">form</span> <span class="tok-o">=</span> <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">getElementById</span><span class="tok-p">(</span><span class="tok-s1">&#39;registration&#39;</span><span class="tok-p">);</span>
             <span class="tok-nx">form</span><span class="tok-p">.</span><span class="tok-nx">onsubmit</span> <span class="tok-o">=</span> <span class="tok-kd">function</span><span class="tok-p">()</span> <span class="tok-p">{</span>
@@ -992,9 +992,9 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 
             <span class="tok-p">};</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-   <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+   <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1017,14 +1017,14 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>register<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>register<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
         You are registered!  (Well, not really.)
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -1034,10 +1034,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-nx">$</span><span class="tok-p">(</span><span class="tok-nb">document</span><span class="tok-p">).</span><span class="tok-nx">ready</span><span class="tok-p">(</span><span class="tok-kd">function</span><span class="tok-p">()</span> <span class="tok-p">{</span>
 
@@ -1069,19 +1069,19 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 
             <span class="tok-p">});</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>form2<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">action=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;registration&quot;</span> <span class="tok-na">method=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Email&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Password&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Password (again)&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">name=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-nt">/&gt;</span> I agree
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value=</span><span class="tok-s">&quot;Register&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>form2<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">action</span><span class="tok-o">=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;registration&quot;</span> <span class="tok-na">method</span><span class="tok-o">=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Email&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Password&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Password (again)&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">name</span><span class="tok-o">=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-p">/&gt;</span> I agree
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value</span><span class="tok-o">=</span><span class="tok-s">&quot;Register&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -1094,52 +1094,52 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
 
-        <span class="tok-nt">&lt;link</span> <span class="tok-na">href=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;</span> <span class="tok-na">rel=</span><span class="tok-s">&quot;stylesheet&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">link</span> <span class="tok-na">href</span><span class="tok-o">=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;</span> <span class="tok-na">rel</span><span class="tok-o">=</span><span class="tok-s">&quot;stylesheet&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
         <span class="tok-c">&lt;!-- http://1000hz.github.io/bootstrap-validator/ --&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
-        <span class="tok-nt">&lt;title&gt;</span>form3<span class="tok-nt">&lt;/title&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>form3<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
 
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;container&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;form</span> <span class="tok-na">action=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">data-toggle=</span><span class="tok-s">&quot;validator&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;registration&quot;</span> <span class="tok-na">method=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-nt">&gt;</span>
-                <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-nt">&gt;</span>
-                    <span class="tok-nt">&lt;label</span> <span class="tok-na">for=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">class=</span><span class="tok-s">&quot;control-label&quot;</span><span class="tok-nt">&gt;</span>Email<span class="tok-nt">&lt;/label&gt;</span>
-                    <span class="tok-nt">&lt;input</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-control&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-                    <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-nt">&gt;&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-nt">&gt;</span>
-                    <span class="tok-nt">&lt;label</span> <span class="tok-na">for=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">class=</span><span class="tok-s">&quot;control-label&quot;</span><span class="tok-nt">&gt;</span>Password<span class="tok-nt">&lt;/label&gt;</span>
-                    <span class="tok-nt">&lt;input</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-control&quot;</span> <span class="tok-na">data-minlength=</span><span class="tok-s">&quot;8&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-                    <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-nt">&gt;&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-nt">&gt;</span>
-                    <span class="tok-nt">&lt;label</span> <span class="tok-na">for=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">class=</span><span class="tok-s">&quot;control-label&quot;</span><span class="tok-nt">&gt;</span>Password (again)<span class="tok-nt">&lt;/label&gt;</span>
-                    <span class="tok-nt">&lt;input</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-control&quot;</span> <span class="tok-na">data-match=</span><span class="tok-s">&quot;#password&quot;</span> <span class="tok-na">data-match-error=</span><span class="tok-s">&quot;passwords don&#39;t match&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-nt">/&gt;</span>
-                    <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-nt">&gt;&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-nt">&gt;</span>
-                    <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-nt">&gt;</span>
-                        <span class="tok-nt">&lt;label&gt;</span>
-                            <span class="tok-nt">&lt;input</span> <span class="tok-na">data-error=</span><span class="tok-s">&quot;checkbox unchecked&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-nt">/&gt;</span> I agree
-                        <span class="tok-nt">&lt;/label&gt;</span>
-                        <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-nt">&gt;&lt;/div&gt;</span>
-                    <span class="tok-nt">&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-nt">&gt;</span>
-                    <span class="tok-nt">&lt;button</span> <span class="tok-na">class=</span><span class="tok-s">&quot;btn btn-default&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-nt">&gt;</span>Register<span class="tok-nt">&lt;/button&gt;</span>
-                <span class="tok-nt">&lt;/div&gt;</span>
-            <span class="tok-nt">&lt;/form&gt;</span>
-        <span class="tok-nt">&lt;/div&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;container&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">action</span><span class="tok-o">=</span><span class="tok-s">&quot;/register&quot;</span> <span class="tok-na">data-toggle</span><span class="tok-o">=</span><span class="tok-s">&quot;validator&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;registration&quot;</span> <span class="tok-na">method</span><span class="tok-o">=</span><span class="tok-s">&quot;get&quot;</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">label</span> <span class="tok-na">for</span><span class="tok-o">=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;control-label&quot;</span><span class="tok-p">&gt;</span>Email<span class="tok-p">&lt;/</span><span class="tok-nt">label</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-control&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">label</span> <span class="tok-na">for</span><span class="tok-o">=</span><span class="tok-s">&quot;email&quot;</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;control-label&quot;</span><span class="tok-p">&gt;</span>Password<span class="tok-p">&lt;/</span><span class="tok-nt">label</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-control&quot;</span> <span class="tok-na">data-minlength</span><span class="tok-o">=</span><span class="tok-s">&quot;8&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">label</span> <span class="tok-na">for</span><span class="tok-o">=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;control-label&quot;</span><span class="tok-p">&gt;</span>Password (again)<span class="tok-p">&lt;/</span><span class="tok-nt">label</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-control&quot;</span> <span class="tok-na">data-match</span><span class="tok-o">=</span><span class="tok-s">&quot;#password&quot;</span> <span class="tok-na">data-match-error</span><span class="tok-o">=</span><span class="tok-s">&quot;passwords don&#39;t match&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;confirmation&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;password&quot;</span><span class="tok-p">/&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-p">&gt;</span>
+                        <span class="tok-p">&lt;</span><span class="tok-nt">label</span><span class="tok-p">&gt;</span>
+                            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">data-error</span><span class="tok-o">=</span><span class="tok-s">&quot;checkbox unchecked&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;agreement&quot;</span> <span class="tok-na">required</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;checkbox&quot;</span><span class="tok-p">/&gt;</span> I agree
+                        <span class="tok-p">&lt;/</span><span class="tok-nt">label</span><span class="tok-p">&gt;</span>
+                        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;help-block with-errors&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;form-group&quot;</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">button</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;btn btn-default&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span><span class="tok-p">&gt;</span>Register<span class="tok-p">&lt;/</span><span class="tok-nt">button</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1168,9 +1168,9 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-c1">// toggles visibility of greeting</span>
             <span class="tok-kd">function</span> <span class="tok-nx">blink</span><span class="tok-p">()</span>
@@ -1189,25 +1189,25 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
             <span class="tok-c1">// blink every 500ms</span>
             <span class="tok-nb">window</span><span class="tok-p">.</span><span class="tok-nx">setInterval</span><span class="tok-p">(</span><span class="tok-nx">blink</span><span class="tok-p">,</span> <span class="tok-mi">500</span><span class="tok-p">);</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;style&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">style</span><span class="tok-p">&gt;</span>
 
-            <span class="tok-nf">#greeting</span>
+            <span class="tok-p">#</span><span class="tok-nn">greeting</span>
             <span class="tok-p">{</span>
-                <span class="tok-k">font-size</span><span class="tok-o">:</span> <span class="tok-m">96pt</span><span class="tok-p">;</span>
-                <span class="tok-k">margin</span><span class="tok-o">:</span> <span class="tok-m">240px</span><span class="tok-p">;</span>
-                <span class="tok-k">text-align</span><span class="tok-o">:</span> <span class="tok-k">center</span><span class="tok-p">;</span>
+                <span class="tok-k">font-size</span><span class="tok-p">:</span> <span class="tok-mi">96</span><span class="tok-kt">pt</span><span class="tok-p">;</span>
+                <span class="tok-k">margin</span><span class="tok-p">:</span> <span class="tok-mi">240</span><span class="tok-kt">px</span><span class="tok-p">;</span>
+                <span class="tok-k">text-align</span><span class="tok-p">:</span> <span class="tok-kc">center</span><span class="tok-p">;</span>
             <span class="tok-p">}</span>
 
-        <span class="tok-nt">&lt;/style&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>blink<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;div</span> <span class="tok-na">id=</span><span class="tok-s">&quot;greeting&quot;</span><span class="tok-nt">&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">style</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>blink<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;greeting&quot;</span><span class="tok-p">&gt;</span>
             hello, world
-        <span class="tok-nt">&lt;/div&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1227,12 +1227,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>storage<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>storage<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-k">if</span> <span class="tok-p">(</span><span class="tok-o">!</span><span class="tok-nx">localStorage</span><span class="tok-p">.</span><span class="tok-nx">getItem</span><span class="tok-p">(</span><span class="tok-s1">&#39;counter&#39;</span><span class="tok-p">))</span> <span class="tok-p">{</span>
                 <span class="tok-nx">localStorage</span><span class="tok-p">.</span><span class="tok-nx">setItem</span><span class="tok-p">(</span><span class="tok-s1">&#39;counter&#39;</span><span class="tok-p">,</span> <span class="tok-mi">0</span><span class="tok-p">);</span>
@@ -1240,9 +1240,9 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
             <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">write</span><span class="tok-p">(</span><span class="tok-nx">localStorage</span><span class="tok-p">.</span><span class="tok-nx">getItem</span><span class="tok-p">(</span><span class="tok-s1">&#39;counter&#39;</span><span class="tok-p">));</span>
             <span class="tok-nx">localStorage</span><span class="tok-p">.</span><span class="tok-nx">setItem</span><span class="tok-p">(</span><span class="tok-s1">&#39;counter&#39;</span><span class="tok-p">,</span> <span class="tok-nb">parseInt</span><span class="tok-p">(</span><span class="tok-nx">localStorage</span><span class="tok-p">.</span><span class="tok-nx">getItem</span><span class="tok-p">(</span><span class="tok-s1">&#39;counter&#39;</span><span class="tok-p">))</span> <span class="tok-o">+</span> <span class="tok-mi">1</span><span class="tok-p">);</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1262,20 +1262,20 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>geolocation<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>geolocation<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-nx">navigator</span><span class="tok-p">.</span><span class="tok-nx">geolocation</span><span class="tok-p">.</span><span class="tok-nx">getCurrentPosition</span><span class="tok-p">(</span><span class="tok-kd">function</span><span class="tok-p">(</span><span class="tok-nx">position</span><span class="tok-p">)</span> <span class="tok-p">{</span>
                 <span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">write</span><span class="tok-p">(</span><span class="tok-nx">position</span><span class="tok-p">.</span><span class="tok-nx">coords</span><span class="tok-p">.</span><span class="tok-nx">latitude</span> <span class="tok-o">+</span> <span class="tok-s1">&#39;, &#39;</span> <span class="tok-o">+</span> <span class="tok-nx">position</span><span class="tok-p">.</span><span class="tok-nx">coords</span><span class="tok-p">.</span><span class="tok-nx">longitude</span><span class="tok-p">);</span>
             <span class="tok-p">});</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1298,10 +1298,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-cm">/**</span>
 <span class="tok-cm">             * Gets a quote via JSON.</span>
@@ -1314,16 +1314,16 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
                 <span class="tok-p">});</span>
             <span class="tok-p">}</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>ajax0<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">onsubmit=</span><span class="tok-s">&quot;quote(); return false;&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">autocomplete=</span><span class="tok-s">&quot;off&quot;</span> <span class="tok-na">autofocus</span> <span class="tok-na">id=</span><span class="tok-s">&quot;symbol&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Symbol&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value=</span><span class="tok-s">&quot;Get Quote&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>ajax0<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">onsubmit</span><span class="tok-o">=</span><span class="tok-s">&quot;quote(); return false;&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">autocomplete</span><span class="tok-o">=</span><span class="tok-s">&quot;off&quot;</span> <span class="tok-na">autofocus</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;symbol&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Symbol&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value</span><span class="tok-o">=</span><span class="tok-s">&quot;Get Quote&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1361,10 +1361,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-nx">$</span><span class="tok-p">(</span><span class="tok-nb">document</span><span class="tok-p">).</span><span class="tok-nx">ready</span><span class="tok-p">(</span><span class="tok-kd">function</span><span class="tok-p">()</span> <span class="tok-p">{</span>
 
@@ -1380,16 +1380,16 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 
             <span class="tok-p">});</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>ajax1<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">id=</span><span class="tok-s">&quot;quote&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">autocomplete=</span><span class="tok-s">&quot;off&quot;</span> <span class="tok-na">autofocus</span> <span class="tok-na">id=</span><span class="tok-s">&quot;symbol&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Symbol&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value=</span><span class="tok-s">&quot;Get Quote&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>ajax1<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;quote&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">autocomplete</span><span class="tok-o">=</span><span class="tok-s">&quot;off&quot;</span> <span class="tok-na">autofocus</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;symbol&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Symbol&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value</span><span class="tok-o">=</span><span class="tok-s">&quot;Get Quote&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 </li>
@@ -1402,10 +1402,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-kd">function</span> <span class="tok-nx">quote</span><span class="tok-p">()</span>
             <span class="tok-p">{</span>
@@ -1416,17 +1416,17 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
                 <span class="tok-p">});</span>
             <span class="tok-p">}</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>ajax2<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;form</span> <span class="tok-na">onsubmit=</span><span class="tok-s">&quot;quote(); return false;&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">autocomplete=</span><span class="tok-s">&quot;off&quot;</span> <span class="tok-na">autofocus</span> <span class="tok-na">id=</span><span class="tok-s">&quot;symbol&quot;</span> <span class="tok-na">placeholder=</span><span class="tok-s">&quot;Symbol&quot;</span> <span class="tok-na">type=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-nt">/&gt;</span>
-            <span class="tok-nt">&lt;input</span> <span class="tok-na">type=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value=</span><span class="tok-s">&quot;Get Quote&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;/form&gt;</span>
-        <span class="tok-nt">&lt;p</span> <span class="tok-na">id=</span><span class="tok-s">&quot;quote&quot;</span><span class="tok-nt">&gt;&lt;/p&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>ajax2<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">form</span> <span class="tok-na">onsubmit</span><span class="tok-o">=</span><span class="tok-s">&quot;quote(); return false;&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">autocomplete</span><span class="tok-o">=</span><span class="tok-s">&quot;off&quot;</span> <span class="tok-na">autofocus</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;symbol&quot;</span> <span class="tok-na">placeholder</span><span class="tok-o">=</span><span class="tok-s">&quot;Symbol&quot;</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;text&quot;</span><span class="tok-p">/&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">input</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;submit&quot;</span> <span class="tok-na">value</span><span class="tok-o">=</span><span class="tok-s">&quot;Get Quote&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">form</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">p</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;quote&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">p</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1451,23 +1451,23 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <span class="tok-kn">from</span> <span class="tok-nn">flask</span> <span class="tok-kn">import</span> <span class="tok-n">Flask</span><span class="tok-p">,</span> <span class="tok-n">jsonify</span><span class="tok-p">,</span> <span class="tok-n">render_template</span><span class="tok-p">,</span> <span class="tok-n">request</span>
 <span class="tok-kn">from</span> <span class="tok-nn">flask.exthook</span> <span class="tok-kn">import</span> <span class="tok-n">ExtDeprecationWarning</span>
 <span class="tok-kn">from</span> <span class="tok-nn">warnings</span> <span class="tok-kn">import</span> <span class="tok-n">simplefilter</span>
-<span class="tok-n">simplefilter</span><span class="tok-p">(</span><span class="tok-s">&quot;ignore&quot;</span><span class="tok-p">,</span> <span class="tok-n">ExtDeprecationWarning</span><span class="tok-p">)</span>
+<span class="tok-n">simplefilter</span><span class="tok-p">(</span><span class="tok-s2">&quot;ignore&quot;</span><span class="tok-p">,</span> <span class="tok-n">ExtDeprecationWarning</span><span class="tok-p">)</span>
 <span class="tok-kn">from</span> <span class="tok-nn">flask_autoindex</span> <span class="tok-kn">import</span> <span class="tok-n">AutoIndex</span>
 
-<span class="tok-n">app</span> <span class="tok-o">=</span> <span class="tok-n">Flask</span><span class="tok-p">(</span><span class="tok-n">__name__</span><span class="tok-p">)</span>
+<span class="tok-n">app</span> <span class="tok-o">=</span> <span class="tok-n">Flask</span><span class="tok-p">(</span><span class="tok-vm">__name__</span><span class="tok-p">)</span>
 <span class="tok-n">AutoIndex</span><span class="tok-p">(</span><span class="tok-n">app</span><span class="tok-p">,</span> <span class="tok-n">browse_root</span><span class="tok-o">=</span><span class="tok-n">os</span><span class="tok-o">.</span><span class="tok-n">path</span><span class="tok-o">.</span><span class="tok-n">curdir</span><span class="tok-p">)</span>
 
-<span class="tok-nd">@app.route</span><span class="tok-p">(</span><span class="tok-s">&quot;/quote&quot;</span><span class="tok-p">)</span>
+<span class="tok-nd">@app.route</span><span class="tok-p">(</span><span class="tok-s2">&quot;/quote&quot;</span><span class="tok-p">)</span>
 <span class="tok-k">def</span> <span class="tok-nf">quote</span><span class="tok-p">():</span>
-    <span class="tok-n">url</span> <span class="tok-o">=</span> <span class="tok-s">&quot;http://download.finance.yahoo.com/d/quotes.csv?f=snl1&amp;s={}&quot;</span><span class="tok-o">.</span><span class="tok-n">format</span><span class="tok-p">(</span><span class="tok-n">request</span><span class="tok-o">.</span><span class="tok-n">args</span><span class="tok-o">.</span><span class="tok-n">get</span><span class="tok-p">(</span><span class="tok-s">&quot;symbol&quot;</span><span class="tok-p">))</span>
+    <span class="tok-n">url</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;http://download.finance.yahoo.com/d/quotes.csv?f=snl1&amp;s={}&quot;</span><span class="tok-o">.</span><span class="tok-n">format</span><span class="tok-p">(</span><span class="tok-n">request</span><span class="tok-o">.</span><span class="tok-n">args</span><span class="tok-o">.</span><span class="tok-n">get</span><span class="tok-p">(</span><span class="tok-s2">&quot;symbol&quot;</span><span class="tok-p">))</span>
     <span class="tok-n">webpage</span> <span class="tok-o">=</span> <span class="tok-n">urllib</span><span class="tok-o">.</span><span class="tok-n">request</span><span class="tok-o">.</span><span class="tok-n">urlopen</span><span class="tok-p">(</span><span class="tok-n">url</span><span class="tok-p">)</span>
-    <span class="tok-n">datareader</span> <span class="tok-o">=</span> <span class="tok-n">csv</span><span class="tok-o">.</span><span class="tok-n">reader</span><span class="tok-p">(</span><span class="tok-n">webpage</span><span class="tok-o">.</span><span class="tok-n">read</span><span class="tok-p">()</span><span class="tok-o">.</span><span class="tok-n">decode</span><span class="tok-p">(</span><span class="tok-s">&quot;utf-8&quot;</span><span class="tok-p">)</span><span class="tok-o">.</span><span class="tok-n">splitlines</span><span class="tok-p">())</span>
+    <span class="tok-n">datareader</span> <span class="tok-o">=</span> <span class="tok-n">csv</span><span class="tok-o">.</span><span class="tok-n">reader</span><span class="tok-p">(</span><span class="tok-n">webpage</span><span class="tok-o">.</span><span class="tok-n">read</span><span class="tok-p">()</span><span class="tok-o">.</span><span class="tok-n">decode</span><span class="tok-p">(</span><span class="tok-s2">&quot;utf-8&quot;</span><span class="tok-p">)</span><span class="tok-o">.</span><span class="tok-n">splitlines</span><span class="tok-p">())</span>
     <span class="tok-n">row</span> <span class="tok-o">=</span> <span class="tok-nb">next</span><span class="tok-p">(</span><span class="tok-n">datareader</span><span class="tok-p">)</span>
-    <span class="tok-k">return</span> <span class="tok-n">jsonify</span><span class="tok-p">({</span><span class="tok-s">&quot;name&quot;</span><span class="tok-p">:</span> <span class="tok-n">row</span><span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">],</span> <span class="tok-s">&quot;price&quot;</span><span class="tok-p">:</span> <span class="tok-nb">float</span><span class="tok-p">(</span><span class="tok-n">row</span><span class="tok-p">[</span><span class="tok-mi">2</span><span class="tok-p">]),</span> <span class="tok-s">&quot;symbol&quot;</span><span class="tok-p">:</span> <span class="tok-n">row</span><span class="tok-p">[</span><span class="tok-mi">0</span><span class="tok-p">]</span><span class="tok-o">.</span><span class="tok-n">upper</span><span class="tok-p">()})</span>
+    <span class="tok-k">return</span> <span class="tok-n">jsonify</span><span class="tok-p">({</span><span class="tok-s2">&quot;name&quot;</span><span class="tok-p">:</span> <span class="tok-n">row</span><span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">],</span> <span class="tok-s2">&quot;price&quot;</span><span class="tok-p">:</span> <span class="tok-nb">float</span><span class="tok-p">(</span><span class="tok-n">row</span><span class="tok-p">[</span><span class="tok-mi">2</span><span class="tok-p">]),</span> <span class="tok-s2">&quot;symbol&quot;</span><span class="tok-p">:</span> <span class="tok-n">row</span><span class="tok-p">[</span><span class="tok-mi">0</span><span class="tok-p">]</span><span class="tok-o">.</span><span class="tok-n">upper</span><span class="tok-p">()})</span>
 
-<span class="tok-nd">@app.route</span><span class="tok-p">(</span><span class="tok-s">&quot;/register&quot;</span><span class="tok-p">)</span>
+<span class="tok-nd">@app.route</span><span class="tok-p">(</span><span class="tok-s2">&quot;/register&quot;</span><span class="tok-p">)</span>
 <span class="tok-k">def</span> <span class="tok-nf">register</span><span class="tok-p">():</span>
-    <span class="tok-k">return</span> <span class="tok-n">render_template</span><span class="tok-p">(</span><span class="tok-s">&quot;register.html&quot;</span><span class="tok-p">)</span></code></pre>
+    <span class="tok-k">return</span> <span class="tok-n">render_template</span><span class="tok-p">(</span><span class="tok-s2">&quot;register.html&quot;</span><span class="tok-p">)</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1493,22 +1493,22 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;style&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">style</span><span class="tok-p">&gt;</span>
 
-            <span class="tok-nt">html</span><span class="tok-o">,</span> <span class="tok-nt">body</span><span class="tok-o">,</span> <span class="tok-nf">#map</span>
+            <span class="tok-nt">html</span><span class="tok-o">,</span> <span class="tok-nt">body</span><span class="tok-o">,</span> <span class="tok-p">#</span><span class="tok-nn">map</span>
             <span class="tok-p">{</span>
-                <span class="tok-k">height</span><span class="tok-o">:</span> <span class="tok-m">100%</span><span class="tok-p">;</span>
-                <span class="tok-k">margin</span><span class="tok-o">:</span> <span class="tok-m">0</span><span class="tok-p">;</span>
+                <span class="tok-k">height</span><span class="tok-p">:</span> <span class="tok-mi">100</span><span class="tok-kt">%</span><span class="tok-p">;</span>
+                <span class="tok-k">margin</span><span class="tok-p">:</span> <span class="tok-mi">0</span><span class="tok-p">;</span>
             <span class="tok-p">}</span>
 
-        <span class="tok-nt">&lt;/style&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>map<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;div</span> <span class="tok-na">id=</span><span class="tok-s">&quot;map&quot;</span><span class="tok-nt">&gt;&lt;/div&gt;</span>
-        <span class="tok-nt">&lt;script&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">style</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>map<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;map&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
 
             <span class="tok-kd">function</span> <span class="tok-nx">initMap</span><span class="tok-p">()</span> <span class="tok-p">{</span>
                 <span class="tok-kd">var</span> <span class="tok-nx">map</span> <span class="tok-o">=</span> <span class="tok-k">new</span> <span class="tok-nx">google</span><span class="tok-p">.</span><span class="tok-nx">maps</span><span class="tok-p">.</span><span class="tok-nx">Map</span><span class="tok-p">(</span><span class="tok-nb">document</span><span class="tok-p">.</span><span class="tok-nx">getElementById</span><span class="tok-p">(</span><span class="tok-s1">&#39;map&#39;</span><span class="tok-p">),</span> <span class="tok-p">{</span>
@@ -1525,10 +1525,10 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
                 <span class="tok-p">});</span>
             <span class="tok-p">}</span>
 
-        <span class="tok-nt">&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://maps.googleapis.com/maps/api/js?key=AIzaSyBKMo-DfSUsW3LvS1C0xxKGOSX2A1HxNx4&amp;callback=initMap&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://maps.googleapis.com/maps/api/js?key=AIzaSyBKMo-DfSUsW3LvS1C0xxKGOSX2A1HxNx4&amp;callback=initMap&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1574,35 +1574,35 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="content">
 <pre class="pygments highlight"><code data-lang="html"><span class="tok-cp">&lt;!DOCTYPE html&gt;</span>
 
-<span class="tok-nt">&lt;html&gt;</span>
-    <span class="tok-nt">&lt;head&gt;</span>
-        <span class="tok-nt">&lt;link</span> <span class="tok-na">href=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;</span> <span class="tok-na">rel=</span><span class="tok-s">&quot;stylesheet&quot;</span><span class="tok-nt">/&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;script </span><span class="tok-na">src=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;</span><span class="tok-nt">&gt;&lt;/script&gt;</span>
-        <span class="tok-nt">&lt;title&gt;</span>modal<span class="tok-nt">&lt;/title&gt;</span>
-    <span class="tok-nt">&lt;/head&gt;</span>
-    <span class="tok-nt">&lt;body&gt;</span>
-        <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;container&quot;</span><span class="tok-nt">&gt;</span>
-            <span class="tok-nt">&lt;button</span> <span class="tok-na">class=</span><span class="tok-s">&quot;btn btn-default&quot;</span> <span class="tok-na">data-target=</span><span class="tok-s">&quot;#myModal&quot;</span> <span class="tok-na">data-toggle=</span><span class="tok-s">&quot;modal&quot;</span><span class="tok-nt">&gt;</span>Click Me<span class="tok-nt">&lt;/button&gt;</span>
-            <span class="tok-nt">&lt;div</span> <span class="tok-na">aria-labelledby=</span><span class="tok-s">&quot;myModalLabel&quot;</span> <span class="tok-na">class=</span><span class="tok-s">&quot;modal fade&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;myModal&quot;</span> <span class="tok-na">role=</span><span class="tok-s">&quot;dialog&quot;</span> <span class="tok-na">tabindex=</span><span class="tok-s">&quot;-1&quot;</span><span class="tok-nt">&gt;</span>
-                <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;modal-dialog&quot;</span> <span class="tok-na">role=</span><span class="tok-s">&quot;document&quot;</span><span class="tok-nt">&gt;</span>
-                    <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;modal-content&quot;</span><span class="tok-nt">&gt;</span>
-                        <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;modal-header&quot;</span><span class="tok-nt">&gt;</span>
-                            <span class="tok-nt">&lt;button</span> <span class="tok-na">aria-label=</span><span class="tok-s">&quot;Close&quot;</span> <span class="tok-na">class=</span><span class="tok-s">&quot;close&quot;</span> <span class="tok-na">data-dismiss=</span><span class="tok-s">&quot;modal&quot;</span><span class="tok-nt">&gt;&lt;span</span> <span class="tok-na">aria-hidden=</span><span class="tok-s">&quot;true&quot;</span><span class="tok-nt">&gt;</span><span class="tok-ni">&amp;times;</span><span class="tok-nt">&lt;/span&gt;&lt;/button&gt;</span>
-                            <span class="tok-nt">&lt;h4</span> <span class="tok-na">class=</span><span class="tok-s">&quot;modal-title&quot;</span> <span class="tok-na">id=</span><span class="tok-s">&quot;myModalLabel&quot;</span><span class="tok-nt">&gt;</span>hello, world<span class="tok-nt">&lt;/h4&gt;</span>
-                        <span class="tok-nt">&lt;/div&gt;</span>
-                        <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;modal-body&quot;</span><span class="tok-nt">&gt;</span>
+<span class="tok-p">&lt;</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">link</span> <span class="tok-na">href</span><span class="tok-o">=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;</span> <span class="tok-na">rel</span><span class="tok-o">=</span><span class="tok-s">&quot;stylesheet&quot;</span><span class="tok-p">/&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://code.jquery.com/jquery-latest.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">script</span> <span class="tok-na">src</span><span class="tok-o">=</span><span class="tok-s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">script</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>modal<span class="tok-p">&lt;/</span><span class="tok-nt">title</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">head</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;container&quot;</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">button</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;btn btn-default&quot;</span> <span class="tok-na">data-target</span><span class="tok-o">=</span><span class="tok-s">&quot;#myModal&quot;</span> <span class="tok-na">data-toggle</span><span class="tok-o">=</span><span class="tok-s">&quot;modal&quot;</span><span class="tok-p">&gt;</span>Click Me<span class="tok-p">&lt;/</span><span class="tok-nt">button</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">aria-labelledby</span><span class="tok-o">=</span><span class="tok-s">&quot;myModalLabel&quot;</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;modal fade&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;myModal&quot;</span> <span class="tok-na">role</span><span class="tok-o">=</span><span class="tok-s">&quot;dialog&quot;</span> <span class="tok-na">tabindex</span><span class="tok-o">=</span><span class="tok-s">&quot;-1&quot;</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;modal-dialog&quot;</span> <span class="tok-na">role</span><span class="tok-o">=</span><span class="tok-s">&quot;document&quot;</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;modal-content&quot;</span><span class="tok-p">&gt;</span>
+                        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;modal-header&quot;</span><span class="tok-p">&gt;</span>
+                            <span class="tok-p">&lt;</span><span class="tok-nt">button</span> <span class="tok-na">aria-label</span><span class="tok-o">=</span><span class="tok-s">&quot;Close&quot;</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;close&quot;</span> <span class="tok-na">data-dismiss</span><span class="tok-o">=</span><span class="tok-s">&quot;modal&quot;</span><span class="tok-p">&gt;&lt;</span><span class="tok-nt">span</span> <span class="tok-na">aria-hidden</span><span class="tok-o">=</span><span class="tok-s">&quot;true&quot;</span><span class="tok-p">&gt;</span><span class="tok-ni">&amp;times;</span><span class="tok-p">&lt;/</span><span class="tok-nt">span</span><span class="tok-p">&gt;&lt;/</span><span class="tok-nt">button</span><span class="tok-p">&gt;</span>
+                            <span class="tok-p">&lt;</span><span class="tok-nt">h4</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;modal-title&quot;</span> <span class="tok-na">id</span><span class="tok-o">=</span><span class="tok-s">&quot;myModalLabel&quot;</span><span class="tok-p">&gt;</span>hello, world<span class="tok-p">&lt;/</span><span class="tok-nt">h4</span><span class="tok-p">&gt;</span>
+                        <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;modal-body&quot;</span><span class="tok-p">&gt;</span>
                             hello, world
-                        <span class="tok-nt">&lt;/div&gt;</span>
-                        <span class="tok-nt">&lt;div</span> <span class="tok-na">class=</span><span class="tok-s">&quot;modal-footer&quot;</span><span class="tok-nt">&gt;</span>
-                            <span class="tok-nt">&lt;button</span> <span class="tok-na">type=</span><span class="tok-s">&quot;button&quot;</span> <span class="tok-na">class=</span><span class="tok-s">&quot;btn btn-default&quot;</span> <span class="tok-na">data-dismiss=</span><span class="tok-s">&quot;modal&quot;</span><span class="tok-nt">&gt;</span>Close<span class="tok-nt">&lt;/button&gt;</span>
-                        <span class="tok-nt">&lt;/div&gt;</span>
-                    <span class="tok-nt">&lt;/div&gt;</span>
-                <span class="tok-nt">&lt;/div&gt;</span>
-            <span class="tok-nt">&lt;/div&gt;</span>
-        <span class="tok-nt">&lt;/div&gt;</span>
-    <span class="tok-nt">&lt;/body&gt;</span>
-<span class="tok-nt">&lt;/html&gt;</span></code></pre>
+                        <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                        <span class="tok-p">&lt;</span><span class="tok-nt">div</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;modal-footer&quot;</span><span class="tok-p">&gt;</span>
+                            <span class="tok-p">&lt;</span><span class="tok-nt">button</span> <span class="tok-na">type</span><span class="tok-o">=</span><span class="tok-s">&quot;button&quot;</span> <span class="tok-na">class</span><span class="tok-o">=</span><span class="tok-s">&quot;btn btn-default&quot;</span> <span class="tok-na">data-dismiss</span><span class="tok-o">=</span><span class="tok-s">&quot;modal&quot;</span><span class="tok-p">&gt;</span>Close<span class="tok-p">&lt;/</span><span class="tok-nt">button</span><span class="tok-p">&gt;</span>
+                        <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                    <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+                <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+            <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+        <span class="tok-p">&lt;/</span><span class="tok-nt">div</span><span class="tok-p">&gt;</span>
+    <span class="tok-p">&lt;/</span><span class="tok-nt">body</span><span class="tok-p">&gt;</span>
+<span class="tok-p">&lt;/</span><span class="tok-nt">html</span><span class="tok-p">&gt;</span></code></pre>
 </div>
 </div>
 <div class="ulist">

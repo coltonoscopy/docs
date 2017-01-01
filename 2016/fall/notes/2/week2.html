@@ -499,7 +499,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>Our first, simple program just printed out <code>hello, world</code>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -660,7 +660,7 @@ make: *** [buggy0] Error 1</code></pre>
 <p>Now if we <code>make</code> our new file, everything should work.</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -676,7 +676,7 @@ make: *** [buggy0] Error 1</code></pre>
 <p>Now let&#8217;s try another buggy program:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -708,7 +708,7 @@ make: *** [buggy0] Error 1</code></pre>
 <p>Now let&#8217;s try to print a <code>#</code> 10 times:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -734,8 +734,8 @@ make: *** [buggy0] Error 1</code></pre>
 <p>So let&#8217;s include a new function from the CS50 Library, <code>eprintf</code>, that prints out errors (or anything we want to mark as special) to the screen:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -795,8 +795,8 @@ buggy0:buggy0.c:9: i is now 10</code></pre>
 <p>Let&#8217;s try one more:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">get_negative_int</span><span class="tok-p">();</span>
 
@@ -1060,9 +1060,9 @@ GDBserver exiting
 <p>We can see this in action with the following program:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1096,9 +1096,9 @@ a</code></pre>
 <p>But what happens if, say, a user types in a really really long string or does something that causes an error? Well, <code>get_string()</code>, and certain other functions in C, can return a special value called <code>NULL</code>. And so to be safe, it&#8217;s good practice to check that <code>s</code> is not <code>NULL</code> before we try to do something with it:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1125,9 +1125,9 @@ a</code></pre>
 <p>So now our program, if we just wanted it to print each character on a line, would be correct. But how might we improve the design? Well, recall that a <code>for</code> loop first initializes a value, checks a condition, and after each iteration, increments the value. So on each pass of the loop, we&#8217;re checking if <code>i &lt; strlen(s)</code>. But <code>strlen()</code> is a function that we call, passing it <code>s</code> as an argument, and using the value it returns to compare with <code>i</code>. Each time, we&#8217;re calculating the length of the string even though we don&#8217;t have to. A better solution might look like this:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1154,9 +1154,9 @@ a</code></pre>
 <p>For style, our variable names are short, since we only have a few of them. We could comment our code:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1203,7 +1203,7 @@ a   b   c   d   e   f   g   h   i   ...
 <p>We can experiment with this program:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1241,7 +1241,7 @@ Z is 90</code></pre>
 <p>But wait, if we can treat numbers like characters, we can also treat characters like numbers:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1267,9 +1267,9 @@ Z is 90</code></pre>
 <p>Maybe we can apply this:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1310,10 +1310,10 @@ Z is 90</code></pre>
 <p>But we could even use a function that comes with C, <code>toupper</code>, in the library <code>ctype.h</code> (and we&#8217;d discover it through looking around reference books or online):</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;ctype.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;ctype.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1341,10 +1341,10 @@ Z is 90</code></pre>
 <p>And in fact, <code>toupper</code> only changes lowercase letters to uppercase, so we can really just:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;ctype.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;ctype.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1375,8 +1375,8 @@ Z is 90</code></pre>
 <p>Let&#8217;s go even further in exploring strings by trying to implement a different function, <code>strlen</code>, ourselves:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1471,8 +1471,8 @@ Z is 90</code></pre>
 <p>Let&#8217;s see this in action:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">argc</span><span class="tok-p">,</span> <span class="tok-n">string</span> <span class="tok-n">argv</span><span class="tok-p">[])</span>
 <span class="tok-p">{</span>
@@ -1511,8 +1511,8 @@ hello, hello</code></pre>
 <p>Let&#8217;s do this, to see how we can iterate over an array:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">argc</span><span class="tok-p">,</span> <span class="tok-n">string</span> <span class="tok-n">argv</span><span class="tok-p">[])</span>
 <span class="tok-p">{</span>
@@ -1535,9 +1535,9 @@ hello, hello</code></pre>
 <p>We can be even cooler. Since we know <code>argv</code> is an array of strings and each string is an array of characters, we can directly access characters from <code>argv</code>:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
-<span class="tok-cp">#include &lt;string.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;string.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">argc</span><span class="tok-p">,</span> <span class="tok-n">string</span> <span class="tok-n">argv</span><span class="tok-p">[])</span>
 <span class="tok-p">{</span>
@@ -1579,8 +1579,8 @@ hello, hello</code></pre>
 <p>Of course, we want to see this firsthand:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">argc</span><span class="tok-p">,</span> <span class="tok-n">string</span> <span class="tok-n">argv</span><span class="tok-p">[])</span>
 <span class="tok-p">{</span>

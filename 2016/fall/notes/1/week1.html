@@ -502,7 +502,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>Our example of having Scratch say <code>hello, world</code> can be translated to the following C:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -647,7 +647,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>So, going back to our original example:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -741,7 +741,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <p>Now we have a file called <code>hello.c</code>, since files with source code for C end in <code>.c</code> by convention. We&#8217;ll type in the same example to the editor:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -946,8 +946,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>We&#8217;ll create a file called <code>string.c</code> (a string is just a sequence of characters):</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -977,8 +977,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>But let&#8217;s make it a little less confusing. Before we <code>get_string</code>, let&#8217;s print some instructions out:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1003,8 +1003,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>Let&#8217;s do something a little different:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1034,8 +1034,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>Let&#8217;s write another short program:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1063,8 +1063,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>But we can make it a little simpler without creating a whole variable and naming it:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1083,8 +1083,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>But let&#8217;s do a little more math:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1131,8 +1131,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>So we can fix it by using a variable type called <code>float</code>, for floating-point values (real numbers):</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1195,8 +1195,8 @@ a.out*  hello*  hello.c</code></pre>
 <p>Let&#8217;s write another program to show us how many bytes are used for each of these data types:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1248,8 +1248,8 @@ a character is 8 bits too, and so on.</p>
 <p>In programs, we see this behavior with integers:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1306,7 +1306,7 @@ n is 0
 <p>Let&#8217;s write a simple program to see this firsthand:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1418,8 +1418,8 @@ n is 0
 <p>Let&#8217;s write a program that uses more of the same ideas from Scratch, so we can build more complex programs in C:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1451,8 +1451,8 @@ n is 0
 <p>We can play with some more logic:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1487,8 +1487,8 @@ n is 0
 <p>Let&#8217;s explore a different way to implement the same program:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1522,8 +1522,8 @@ n is 0
 <p>With our compiler and editor to help us explore, we could try removing all the <code>break;</code> statements to see what happens:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1557,8 +1557,8 @@ n is 0
 <p>Let&#8217;s dive deeper into how to design code, by making our own custom function:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1581,8 +1581,8 @@ n is 0
 <p>But now if we try to <code>print_name(s)</code> in our <code>main</code> function, we still get an error. And that&#8217;s because the compiler reads from top to bottom, in order, so at the time <code>main</code> calls <code>print_name</code>, it doesn&#8217;t exist yet. So we need to declare it with something called a <strong>prototype</strong> first:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">void</span> <span class="tok-nf">print_name</span><span class="tok-p">(</span><span class="tok-n">string</span> <span class="tok-n">name</span><span class="tok-p">);</span>
 
@@ -1616,8 +1616,8 @@ n is 0
 <p>And to demonstrate return values, we can write a program like this:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">square</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">);</span>
 
@@ -1649,8 +1649,8 @@ n is 0
 <p>If we go back to our original <code>get_string</code> function, we can realize that <code>get_string</code> probably has a prototype that looks something like <code>string get_string(void)</code>, since it takes no arguments but returns a string for us to use:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1664,7 +1664,7 @@ n is 0
 <p>Let&#8217;s improve our <code>cough</code> example from Scratch last time, step by step:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1686,7 +1686,7 @@ n is 0
 <p>So we can replace that with a loop, since each line is exactly the same:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">int</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">)</span>
 <span class="tok-p">{</span>
@@ -1702,7 +1702,7 @@ n is 0
 <p>But we can write our own function now, so we can reuse it wherever we&#8217;d like:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">void</span> <span class="tok-nf">cough</span><span class="tok-p">(</span><span class="tok-kt">void</span><span class="tok-p">);</span>
 
@@ -1732,8 +1732,8 @@ n is 0
 <p>For example, if we wanted to <code>cough</code> a number of times, and also <code>sneeze</code> a certain number of times, we should be able to do that quite simply:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include &lt;cs50.h&gt;</span>
-<span class="tok-cp">#include &lt;stdio.h&gt;</span>
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-cp">#include</span> <span class="tok-cpf">&lt;cs50.h&gt;</span><span class="tok-cp"></span>
+<span class="tok-cp">#include</span> <span class="tok-cpf">&lt;stdio.h&gt;</span><span class="tok-cp"></span>
 
 <span class="tok-kt">void</span> <span class="tok-nf">cough</span><span class="tok-p">(</span><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">);</span>
 <span class="tok-kt">void</span> <span class="tok-nf">say</span><span class="tok-p">(</span><span class="tok-n">string</span> <span class="tok-n">word</span><span class="tok-p">,</span> <span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-p">);</span>

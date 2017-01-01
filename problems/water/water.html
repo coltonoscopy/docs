@@ -484,7 +484,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#usage">Usage</a></li>
 <li><a href="#testing">Testing</a>
 <ul class="sectlevel2">
-<li><a href="#check50">check50</a></li>
+<li><a href="#code-check50-code"><code>check50</code></a></li>
 </ul>
 </li>
 <li><a href="#staff-solution">Staff Solution</a></li>
@@ -505,12 +505,12 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code>$ <span class="underline">./water</span>
-<span class="underline">1</span>
-12
+Minutes: <span class="underline">1</span>
+Bottles: 12
 
 $ <span class="underline">./water</span>
-<span class="underline">10</span>
-120</code></pre>
+Minutes: <span class="underline">10</span>
+Bottles: 120</code></pre>
 </div>
 </div>
 </div>
@@ -551,9 +551,14 @@ $ <span class="underline">./water</span>
 <div class="sect1">
 <h2 id="usage"><a class="link" href="#usage">Usage</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Your program should behave per the example below. Assumed that the underlined text is what some user has typed.</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code>$ ./water</code></pre>
+<pre class="pygments highlight"><code>$ <span class="underline">./water</span>
+Minutes: <span class="underline">10</span>
+Bottles: 120</code></pre>
 </div>
 </div>
 </div>
@@ -561,18 +566,8 @@ $ <span class="underline">./water</span>
 <div class="sect1">
 <h2 id="testing"><a class="link" href="#testing">Testing</a></h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Your program should behave per the example below. Assumed that the underlined text is what some user has typed.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>~/workspace/pset1/ $ <span class="underline">./water</span>
-minutes: <span class="underline">10</span>
-bottles: 120</code></pre>
-</div>
-</div>
 <div class="sect2">
-<h3 id="check50"><a class="link" href="#check50">check50</a></h3>
+<h3 id="code-check50-code"><a class="link" href="#code-check50-code"><code>check50</code></a></h3>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="text">check50 2016.water water.c</code></pre>

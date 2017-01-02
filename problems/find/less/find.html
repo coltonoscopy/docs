@@ -641,15 +641,7 @@ Makefile    find.c      generate.c  helpers.c   helpers.h</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>The first line tells <code>make</code> that the "target" called <code>generate</code> should be built by invoking the second line&#8217;s command. Moreover, that first line tells <code>make</code> that <code>generate</code> is dependent on <code>generate.c</code>, the implication of which is that <code>make</code> will only re-build generate on subsequent runs if that file was modified since <code>make</code> last built <code>generate</code>. Neat time-saving trick, eh? In fact, go ahead and execute the command below again, assuming you haven&#8217;t modified <code>generate.c</code>.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>make generate</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You should be informed that generate is already up-to-date. Incidentally, know that the leading whitespace on that second line is not a sequence of spaces but, rather, a tab. Unfortunately, <code>make</code> requires that commands be preceded by tabs, so be careful not to change them to spaces, else you may encounter strange errors! The <code>-Werror</code> flag, recall, tells <code>clang</code> to treat warnings (bad) as though they&#8217;re errors (worse) so that you&#8217;re forced (in a good, instructive way!) to fix them.</p>
+<p>The first line tells <code>make</code> that the "target" called <code>generate</code> should be built by invoking the second line&#8217;s command. Know that the leading whitespace on that second line is not a sequence of spaces but, rather, a tab. Unfortunately, <code>make</code> requires that commands be preceded by tabs, so be careful not to change them to spaces, else you may encounter strange errors! The <code>-Werror</code> flag, recall, tells <code>clang</code> to treat warnings (bad) as though they&#8217;re errors (worse) so that you&#8217;re forced (in a good, instructive way!) to fix them.</p>
 </div>
 <div class="paragraph">
 <p>Now take a look at <code>find.c</code>. Notice that this program expects a single command-line argument: a "needle" to search for in a "haystack" of values. Once done looking over the code, go ahead and compile the program by executing the command below.</p>

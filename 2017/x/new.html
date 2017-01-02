@@ -4,6 +4,36 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+        <script crossorigin="anonymous" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    displayMath: [["\\[", "\\]"]],
+                    ignoreClass: "nostem|nostem|nolatexmath",
+                    inlineMath: [["\\(", "\\)"]]
+                },
+                asciimath2jax: {
+                    delimiters: [["\\$", "\\$"]],
+                    ignoreClass: "nostem|nostem|noasciimath",
+                    processEnvironments: true
+                }
+            });
+        </script>
+        <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script>
+
+            $(function() {
+
+                // responsive embed
+                // http://getbootstrap.com/components/#responsive-embed
+                $('div.videoblock div.content').addClass('embed-responsive embed-responsive-16by9');
+                $('div.videoblock div.content iframe').addClass('embed-responsive-item');
+
+            });
+
+        </script>
         <style>
 
             /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -398,260 +428,310 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 .listingblock .pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
         </style>
-        <title></title>
+        <style>
+
+            /* http://stackoverflow.com/a/30195325 */
+            ol > li:before {
+                content: "";
+                display: block;
+                height: 1em;
+            }
+            ol > li > p:first-child {
+                margin-top: -1em;
+            }
+
+            /* wrap inline code */
+            *:not(pre) > code {
+                white-space: pre-wrap;
+            }
+            
+            /* don't wrap code blocks */
+            pre, pre code {
+                overflow: auto;
+                white-space: pre;
+                word-wrap: normal;
+            }
+
+            /* match margin-bottom of div.paragraph */
+            div.stemblock div.content {
+                margin-bottom: 1.25em;
+            }
+
+            /* fill page */
+            table {
+                width: 100%;
+            }
+
+            /* allow captions to wrap */
+            .tableblock > caption {
+                max-width: inherit;
+                white-space: inherit;
+            }
+
+        </style>
+        <title>What&#8217;s new?</title>
     </head>
-    <body class="toc2 toc-left">
-        <div id="header">
-            <div class="toc2" id="toc">
-                <div id="toctitle">Table of Contents</div>
-                <ul class="sectlevel1">
-<li><a href="#tl-dr">tl;dr</a></li>
-<li><a href="#getting-started">Getting Started</a>
+    
+        <body class="toc2 toc-left">
+            <div id="header">
+                <div class="toc2" id="toc">
+                    <div id="toctitle">Table of Contents</div>
+                    <ul class="sectlevel1">
+<li><a href="#lectures">Lectures</a>
 <ul class="sectlevel2">
-<li><a href="#logging-in">Logging In</a></li>
-<li><a href="#updating">Updating</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#sqlite">SQLite</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#virtual-reality">Virtual Reality</a></li>
 </ul>
 </li>
-<li><a href="#what-to-do">What to Do</a></li>
-<li><a href="#how-to-submit">How to Submit</a>
+<li><a href="#sections-shorts">Sections, Shorts</a></li>
+<li><a href="#seminars">Seminars</a></li>
+<li><a href="#problem-sets">Problem Sets</a></li>
+<li><a href="#software">Software</a>
 <ul class="sectlevel2">
-<li><a href="#step-1-of-2">Step 1 of 2</a></li>
-<li><a href="#step-2-of-2">Step 2 of 2</a></li>
+<li><a href="#code-help50-code"><code>help50</code></a></li>
+<li><a href="#code-eprintf-code"><code>eprintf</code></a></li>
+<li><a href="#code-debug50-code"><code>debug50</code></a></li>
 </ul>
 </li>
 </ul>
+                </div>
             </div>
-        </div>
-        <div id="content">
-            <h1>Problem Set 1: C</h1>
-<div class="sect1">
-<h2 id="tl-dr"><a class="link" href="#tl-dr">tl;dr</a></h2>
+            <div id="content">
+                <h1>What&#8217;s new?</h1>
+<div id="preamble">
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic" start="0">
-<li>
-<p>Watch <a href="https://video.cs50.net/2016/fall/lectures/1">Week 1&#8217;s lecture</a>.</p>
-</li>
-<li>
-<p>Get your CS50 IDE set up with <code>hello.c</code>.</p>
-</li>
-<li>
-<p>Calculate your water consumption with <code>water.c</code>.</p>
-</li>
-<li>
-<p>Recreate one of Mario&#8217;s pyramids, in <code>mario.c</code>.</p>
-</li>
-<li>
-<p>Provide a user with either cash or credit in <code>greedy.c</code> or <code>credit.c</code>.</p>
-</li>
-<li>
-<p>Submit your code.</p>
-</li>
-<li>
-<p>Submit a form.</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
-<p>Unresolved directive in yale.new.adoc - include::help-yale.adoc[]</p>
+<p>Here&#8217;s (much of) what&#8217;s new in CS50x 2017 vis-à-vis CS50x 2016!</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="getting-started"><a class="link" href="#getting-started">Getting Started</a></h2>
+<h2 id="lectures"><a class="link" href="#lectures">Lectures</a></h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Recall that CS50 IDE is a web-based "integrated development environment" that allows you to program "in the cloud," without installing any software locally. Underneath the hood is a popular operating system, Ubuntu Linux, that&#8217;s been "containerized" with open-source software called Docker, that allows multiple users (like you!) to share the operating system&#8217;s "kernel" (its nucleus, so to speak) and files, even while having files of their own. Indeed, CS50 IDE provides you with your very own "workspace" (i.e., storage space) in which you can save your own files and folders (aka directories).</p>
-</div>
 <div class="sect2">
-<h3 id="logging-in"><a class="link" href="#logging-in">Logging In</a></h3>
+<h3 id="machine-learning"><a class="link" href="#machine-learning">Machine Learning</a></h3>
 <div class="paragraph">
-<p>Head to <a href="https://cs50.io/">cs50.io</a> and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click <strong>Private</strong> under <strong>Hosted workspace</strong>, then click <strong>Create workspace</strong>.</p>
-</div>
-<div class="paragraph">
-<p>You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble mine from Week 1. If not, do just email the course&#8217;s heads to inquire!</p>
+<p>CS50x now covers a bit of machine learning (ML), thanks to Patrick Rebeschini at Yale.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="updating"><a class="link" href="#updating">Updating</a></h3>
+<h3 id="python"><a class="link" href="#python">Python</a></h3>
 <div class="paragraph">
-<p>Toward the bottom of CS50 IDE&#8217;s UI is a "terminal window" (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace&#8217;s files and directories, compile code, run programs, and even install new software. You should find that its "prompt" resembles the below.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="text">~/workspace/ $</code></pre>
+<p>Most of CS50x is still taught in C, but as of 2017, PHP has been replaced with Python.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="sqlite"><a class="link" href="#sqlite">SQLite</a></h3>
 <div class="paragraph">
-<p>Click inside of that terminal window and then type</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="text">update50</code></pre>
+<p>CS50x now introduces SQL using SQLite instead of MySQL.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="videos"><a class="link" href="#videos">Videos</a></h3>
 <div class="paragraph">
-<p>followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!)</p>
+<p>Instead of two lectures per week (as in 2016), CS50x now has one lecture per week, albeit longer. But you can now watch those lectures (on laptops and desktops) in CS50&#8217;s new-and-improved video player, thanks to CS50&#8217;s own Luke Jackson, whose features include:</p>
 </div>
-<div class="paragraph">
-<p>Next, execute</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>mkdir ~/workspace/pset1/</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>at your prompt in order to make a directory called <code>pset1</code> in your <code>workspace</code> directory. Take care not to overlook the space between <code>mkdir</code> and <code>~/workspace/pset1</code> or any other character for that matter!  Keep in mind that <code>~</code> denotes your home directory, <code>~/workspace</code> denotes a directory called <code>workspace</code> therein, and <code>~/workspace/pset1</code> denotes a directory called <code>pset1</code> within <code>~/workspace</code>.</p>
-</div>
-<div class="paragraph">
-<p>Now execute</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>cd ~/workspace/pset1/</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code>~/workspace/pset1/ $</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If not, retrace your steps and see if you can determine where you went wrong. You can actually execute</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span class="tok-nb">history</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>at the prompt to see your last several commands in chronological order if you&#8217;d like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard&#8217;s up and down arrows; hit Enter to re-execute any command that you&#8217;d like.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="what-to-do"><a class="link" href="#what-to-do">What to Do</a></h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Implement <a href="../../../../problems/hello/hello.html">Hello</a></p>
-</li>
-<li>
-<p>Implement <a href="../../../../problems/water/water.html">Water</a></p>
-</li>
-<li>
-<p>Implement either of:</p>
-<div class="openblock">
-<div class="content">
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../../../../problems/mario/less/mario.html">Mario</a>, less comfortable</p>
+<p>Video fills your browser&#8217;s viewport.</p>
 </li>
 <li>
-<p><a href="../../../../problems/mario/more/mario.html">Mario</a>, more comfortable</p>
+<p>Three different modes for watching:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A default mode, which automatically cuts among camera angles and David&#8217;s laptop.</p>
+</li>
+<li>
+<p>A multicam mode, which overlays David&#8217;s laptop on the video continually. You can resize the overlay by clicking and dragging its bottom-right corner and even swap it with the video itself by clicking it.</p>
+</li>
+<li>
+<p>A 360º stereoscopic VR mode, which allows you to experience Sanders Theatre in its entirety by clicking and dragging.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>A searchable transcript of everything David says (for better or for worse), organized with a table of contents.</p>
+</li>
+<li>
+<p>Ability to rewind a few seconds (if you zone out).</p>
+</li>
+<li>
+<p>Ability to fast-forward to the video&#8217;s next "chapter," per the table of contents.</p>
+</li>
+<li>
+<p>1x, 1.5x, an 2x playback speeds.</p>
+</li>
+<li>
+<p>Closed captioning.</p>
+</li>
+<li>
+<p>Ability to download videos in multiple resolutions.</p>
+</li>
+<li>
+<p>Ability to full-screen videos.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s <a href="https://video.cs50.net/2016/fall/lectures/0">Week 0&#8217;s lecture</a> if you&#8217;d like to try out the new player.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="virtual-reality"><a class="link" href="#virtual-reality">Virtual Reality</a></h3>
+<div class="paragraph">
+<p>Each of CS50x&#8217;s lectures can now be viewed in 360º stereoscopic virtual reality (VR) using Google Cardboard, HTC Vive, Oculus Rift, Samsung Gear, or YouTube&#8217;s mobile app.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sections-shorts"><a class="link" href="#sections-shorts">Sections, Shorts</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In 2016, Doug&#8217;s "sections" were a bit of a misnomer, since they were really just short, non-interactive videos, just like the course&#8217;s actual "shorts." And they were also a bit redundant with the course&#8217;s actual shorts, which have been showing their age, not to mention time-consuming to watch! For 2017, then, each week of CS50x has one lecture and zero or more shorts (and no "sections").</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="seminars"><a class="link" href="#seminars">Seminars</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Thanks to CS50&#8217;s TFs and CAs, new to CS50x are seminars on:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automated Analysis of Music and Audio</p>
+</li>
+<li>
+<p>Chrome Extensions</p>
+</li>
+<li>
+<p>Data Analytics with Meteor.js + ReactJS</p>
+</li>
+<li>
+<p>Data Science with Python Pandas</p>
+</li>
+<li>
+<p>Data Visualization with D3</p>
+</li>
+<li>
+<p>Drawing Real Web Apps with Pagedraw</p>
+</li>
+<li>
+<p>An Introduction to Git and GitHub</p>
+</li>
+<li>
+<p>JavaScript with Exponent and React Native</p>
+</li>
+<li>
+<p>Making the Most of Bootstrap</p>
+</li>
+<li>
+<p>P vs. NP</p>
+</li>
+<li>
+<p>Smart Cities Data</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
-</li>
-<li>
-<p>Implement either of:</p>
-<div class="openblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="../../../../problems/greedy/greedy.html">Greedy</a>, less comfortable</p>
-</li>
-<li>
-<p><a href="../../../../problems/credit/credit.html">Credit</a>, more comfortable</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</li>
-</ol>
+<div class="sect1">
+<h2 id="problem-sets"><a class="link" href="#problem-sets">Problem Sets</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Problem Sets 0 through 5 are largely unchanged, though "Hacker Editions" have been replaced with "more-comfortable" problems. Meanwhile <a href="http://docs.cs50.net/2017/x/psets/6/pset6.html">Problem Set 6</a> (in Python) is entirely new this year, and <a href="http://docs.cs50.net/2017/x/psets/7/pset7.html">Problem Set 7</a> and <a href="http://docs.cs50.net/2017/x/psets/8/pset8.html">Problem Set 8</a> have also been ported to Python.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="how-to-submit"><a class="link" href="#how-to-submit">How to Submit</a></h2>
+<h2 id="software"><a class="link" href="#software">Software</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="step-1-of-2"><a class="link" href="#step-1-of-2">Step 1 of 2</a></h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>When ready to submit, log into <a href="https://cs50.io/">CS50 IDE</a>.</p>
-</li>
-<li>
-<p>Toward CS50 IDE&#8217;s top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your <code>hello.c</code> file (that&#8217;s within your <strong>pset1</strong> directory) and then select <strong>Download</strong>. You should find that your browser has downloaded <code>hello.c</code>.</p>
-</li>
-<li>
-<p>Repeat for <code>water.c</code>.</p>
-</li>
-<li>
-<p>Repeat for <code>mario.c</code>.</p>
-</li>
-<li>
-<p>Repeat for <code>greedy.c</code> or <code>credit.c</code>.</p>
-</li>
-<li>
-<p>In a separate tab or window, log into <a href="http://cs50.net/submit">CS50 Submit</a>, logging in if prompted.</p>
-</li>
-<li>
-<p>Click <strong>Submit</strong> toward the window&#8217;s top-left corner.</p>
-</li>
-<li>
-<p>Under <strong>Problem Set 1</strong> on the screen that appears, click <strong>Upload New Submission</strong>.</p>
-</li>
-<li>
-<p>On the screen that appears, click <strong>Add files&#8230;&#8203;</strong>.  A window entitled <strong>Open Files</strong> should appear.</p>
-</li>
-<li>
-<p>Navigate your way to <code>hello.c</code>. Odds are it&#8217;s in your <strong>Downloads</strong> folder or wherever your browser downloads files by default.  Once you find <code>hello.c</code>, click it once to select it, then click <strong>Open</strong> (or the like).</p>
-</li>
-<li>
-<p>Click <strong>Add files&#8230;&#8203;</strong> again, and a window entitled <strong>Open Files</strong> should appear again.</p>
-</li>
-<li>
-<p>Navigate your way to <code>water.c</code> as before.  Click it once to select it, then click <strong>Open</strong> (or the like).</p>
-</li>
-<li>
-<p>Navigate your way to <code>mario.c</code> as before.  Click it once to select it, then click <strong>Open</strong> (or the like).</p>
-</li>
-<li>
-<p>Navigate your way to <code>greedy.c</code> or <code>credit.c</code> as before.  Click it once to select it, then click <strong>Open</strong> (or the like).</p>
-</li>
-<li>
-<p>Click <strong>Start upload</strong> to upload all of your files at once to CS50&#8217;s servers.</p>
-</li>
-<li>
-<p>On the screen that appears, you should see a window with <strong>No File Selected</strong>.  If you move your mouse toward the window&#8217;s lefthand side, you should see a list of the files you uploaded.  Click each to confirm the contents of each.  (No need to click any other buttons or icons.)  If confident that you submitted the files you intended, consider your source code submitted!  If you&#8217;d like to re-submit different (or modified) files, simply return to <a href="https://cs50.harvard.edu/submit">CS50 Submit</a> and repeat these steps.  You may re-submit as many times as you&#8217;d like; we&#8217;ll grade your most recent submission, so long as it&#8217;s before the deadline.</p>
-</li>
-</ol>
+<h3 id="code-help50-code"><a class="link" href="#code-help50-code"><code>help50</code></a></h3>
+<div class="paragraph">
+<p><a href="http://cs50.io/">CS50 IDE</a> now comes with <code>help50</code>, a command-line tool that can help you understand (many!) error messages, thanks to CS50&#8217;s own Brian Yu and Annie Chen. For instance, suppose that you&#8217;re trying to compile <code>hello.c</code> with</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>$ make hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and you encounter one or more error messages that you don&#8217;t understand. Try running</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>$ help50 make hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>instead, and <code>help50</code> will do its best to help you understand (at least) the first of those error messages!</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="step-2-of-2"><a class="link" href="#step-2-of-2">Step 2 of 2</a></h3>
+<h3 id="code-eprintf-code"><a class="link" href="#code-eprintf-code"><code>eprintf</code></a></h3>
 <div class="paragraph">
-<p>Head to <a href="https://forms.cs50.net/2016/fall/psets/1" class="bare">https://forms.cs50.net/2016/fall/psets/1</a> where a short form awaits. Once you have submitted that form (as well as your source code), you are done! If you end up resubmitting your files (per step 1 of 2), no need to resubmit the form.</p>
+<p>The CS50 Library now comes with <code>eprintf</code>, a function that you might want to add (temporarily) to your code when trying to find a bug. It works just like <code>printf</code> except that the output of <code>eprintf</code> is prepended with the calling function&#8217;s file name and line number. For instance, suppose that you&#8217;re trying to find some bug in <code>hello.c</code>. Were you to add</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="c"><span class="tok-n">eprintf</span><span class="tok-p">(</span><span class="tok-s">&quot;hello, world</span><span class="tok-se">\n</span><span class="tok-s">&quot;</span><span class="tok-p">);</span></code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>This was Problem Set 1.</p>
+<p>on line 50 of <code>hello.c</code> and then compile and run the program with</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>$ make hello
+$ ./hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>you should see</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>hello.c:50: hello, world</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>assuming execution indeed reaches line 50!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="code-debug50-code"><a class="link" href="#code-debug50-code"><code>debug50</code></a></h3>
+<div class="paragraph">
+<p><a href="http://cs50.io/">CS50 IDE</a> now has a new-and-improved graphical debugger for C, thanks to CS50&#8217;s own Dan Armendariz and Kareem Zidane. Last year&#8217;s <strong>Debug</strong> button has been replaced with <code>debug50</code>, a command-line program that starts the graphical debugger (more precisely). For instance, suppose that you&#8217;re writing a program called <code>hello</code> in a file called <code>hello.c</code> that expects three command-line arguments. To debug that program, first compile it with:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>$ make hello</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And then run</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>$ debug50 ./hello foo bar baz</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>assuming <code>foo</code>, <code>bar</code>, and <code>baz</code> are the intended command-line arguments. The graphical debugger should open, at which point you can navigate via CS50 IDE&#8217;s right-hand panel.</p>
 </div>
 </div>
 </div>
 </div>
-        </div>
-    </body>
+            </div>
+        </body>
+    
 </html>

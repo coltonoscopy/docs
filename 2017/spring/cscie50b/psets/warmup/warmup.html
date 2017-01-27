@@ -414,6 +414,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 <li><a href="#scramblin">Scramblin'</a></li>
 <li><a href="#perusin">Perusin'</a></li>
 <li><a href="#codin">Codin'</a></li>
+<li><a href="#how-to-submit">How to Submit</a></li>
 </ul>
             </div>
         </div>
@@ -472,7 +473,7 @@ span.icon > [class^="icon-"], span.icon > [class*=" icon-"] { cursor: default; }
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash">wget http://docs.cs50.net/2017/spring/psets/warmup/warmup.zip</code></pre>
+<pre class="pygments highlight"><code data-lang="bash">wget http://docs.cs50.net/2017/spring/cscie50b/psets/warmup/warmup.zip</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -603,14 +604,14 @@ code if you understand the code that&#8217;s already there! If unfamiliar with s
 <p>Also, while debugging your program, you might want to comment out the call to <code>clear</code> in <code>main</code> so that you can see everything printed by <code>printf</code>, without anything disappearing.</p>
 </div>
 <div class="paragraph">
-<p>Next read through each of the functions below <code>main</code>. Don&#8217;t fret if you don&#8217;t understand <code>find</code> and <code>crawl</code>, but do take a stab at reading through them. It turns out that <code>crawl</code> implements a
+<p>Next read through each of the functions below <code>main</code>. In particular, make an effort to understand what is happening in <code>find</code> and <code>crawl</code>. It turns out that <code>crawl</code> implements a
 "recursive" algorithm (whereby <code>crawl</code> calls itself) that searches the grid horizontally, vertically, and diagonally for a particular word, "marking" letters temporarily as it visits them so that it doesn&#8217;t accidentally get caught in an infinite loop.</p>
 </div>
 <div class="paragraph">
 <p>Meanwhile, <code>initialize</code> might look a bit intimidating, but spend some time figuring out how it goes about initializing the grid with a distribution of letters. The <code>man</code> page for <code>rand</code> (albeit a bit cryptic itself) might help you figure out all the arithmetic.</p>
 </div>
 <div class="paragraph">
-<p>Finally, <code>load</code> definitely has some new syntax, particularly <code>FILE</code>. We&#8217;ll revisit <code>FILE</code> and more in the weeks to come. For now, know that <code>load</code> simply loads a whole bunch of words, one per line, from a file into an array.</p>
+<p>Finally, <code>load</code> should have some somewhat familiar syntax, particularly <code>FILE</code>. We&#8217;ll revisit <code>FILE</code> and more in the weeks to come. For now, know that <code>load</code> simply loads a whole bunch of words, one per line, from a file into an array.</p>
 </div>
 <div class="paragraph">
 <p>Hm, it seems we forgot to implement <code>draw</code>, <code>lookup</code>, and <code>scramble</code>. Oops!</p>
@@ -635,6 +636,47 @@ code if you understand the code that&#8217;s already there! If unfamiliar with s
 <p>Complete the implementation of <code>scramble</code> (the function) in such a way that the grid is <strong>rotated</strong> 90 degrees clockwise anytime the user types <code>SCRAMBLE</code>, per the comments therein.  Note that this feature doesn&#8217;t affect the words in the grid; it simply lets the user see them from different perspective.</p>
 </li>
 <li>
+<p>By default, the distribution code makes it so that if you find an <em>n</em>-letter word, you score <em>n</em> points. Create a new function called <code>score</code> to instead have the user to score points according to the following table. You will, of course, also have to alter <code>main</code> to call your new <code>score</code> function when awarding the user points.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Word Length</th>
+<th class="tableblock halign-left valign-top">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1, 2, or 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 point</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 points</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4 points</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8 points</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7 or more</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16 points</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
 <p>By default, the distribution code is case-sensitive, whereby if <code>FOO</code> is in dictionary, the user must type <code>FOO</code>, not <code>foo</code>, in order to score. Alter <code>main</code> in such a way that the user can
 type <code>FOO</code> or <code>foo</code> (or even <code>FoO</code> or any other capitalization thereof) in order to score.</p>
 </li>
@@ -643,8 +685,16 @@ type <code>FOO</code> or <code>foo</code> (or even <code>FoO</code> or any other
 <div class="paragraph">
 <p>Now you can play (well, maybe after some debugging) your own version of <code>scramble</code>!</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-submit"><a class="link" href="#how-to-submit">How to Submit</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>This was Scramble (Part 1).</p>
+<p>Refresh this page on (or after) Mon 2/6 for submission instructions!</p>
+</div>
+<div class="paragraph">
+<p>This was the Warm-Up.</p>
 </div>
 </div>
 </div>

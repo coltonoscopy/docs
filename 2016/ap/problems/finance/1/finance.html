@@ -954,7 +954,23 @@ wget http://docs.cs50.net/2016/ap/problems/finance/finance.sql</code></pre>
 the innermost curly braces). That latter object, meanwhile, has four keys (<code>host</code>, <code>name</code>, <code>password</code>, and <code>username</code>), each of whose values is a string, two of which are <code>TODO</code>! Those values will be used by CS50&#8217;s PHP library (which can be found in <code>finance/vendor</code>) in order to connect to your workspace&#8217;s MySQL database. CS50&#8217;s PHP library includes a function, <code>query</code>, that will allow you to send queries to that database.</p>
 </div>
 <div class="paragraph">
-<p>Anyhow, let&#8217;s tackle those <code>TODO</code>s! Click the ⓘ icon toward CS50 IDE&#8217;s top-right corner. You should see your <strong>MySQL Username</strong> and your <strong>MySQL Password</strong>. Copy and paste those values, one at a time, into the appropriate places in <code>config.json</code>, then save and close that file.</p>
+<p>Anyhow, let&#8217;s tackle those <code>TODO</code>s! Enter the command</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">username50</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash">password50</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should see your <strong>MySQL Username</strong> and your <strong>MySQL Password</strong>. Copy and paste those values, one at a time, into the appropriate places in <code>config.json</code>, then save and close that file.</p>
 </div>
 <div class="paragraph">
 <p>It&#8217;s now time for a test! Visit <code>https://ide50-username.cs50.io/</code>, where <code>username</code> is your own username.  You should find yourself redirected to C$50 Finance&#8217;s login page!  (If you instead see <strong>Forbidden</strong>, odds are you missed a step earlier; best to try all those chmod steps again.)  If you try logging into C$50 Finance with a username of, oh, <strong>skroob</strong> and a password of <strong>12345</strong>, you should encounter an error about an <strong>Unknown database</strong>.  That&#8217;s simply because you haven&#8217;t created it yet!  Let&#8217;s create it.</p>
@@ -1558,7 +1574,7 @@ have access for the duration of some user&#8217;s visit.  The moment a user ends
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where <code>username</code> is your own username, pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by clicking the ⓘ icon toward CS50 IDE&#8217;s top-right corner.) For security, you won&#8217;t see the password as you paste it.</p>
+<p>When ready to submit, "export" your MySQL database (i.e., save it into a text file) by executing the commands below, where <code>username</code> is your own username (type the command ‘username50’ if you forgot it), and pasting your MySQL password when prompted for a password.  (Recall that you can see your MySQL password by typing ‘password50’). For security, you won&#8217;t see the password as you paste it.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code>cd ~/workspace/finance
